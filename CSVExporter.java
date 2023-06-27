@@ -23,7 +23,7 @@ import java.time.format.DateTimeFormatter;;
 public class CSVExporter extends JOptionPane {
     public static void main(String[] args) {
         // Initialize Classes
-        JFrame f = new JFrame("CSV Exporter v1.2");
+        JFrame f = new JFrame("CSV Exporter v1.0");
         JPanel p = new JPanel();
         JButton b = new JButton("Create CSV");
         JTextArea jta = new JTextArea();
