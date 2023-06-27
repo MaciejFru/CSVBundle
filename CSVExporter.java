@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 import javax.swing.JPanel;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 
 
 import java.awt.BorderLayout;
@@ -23,10 +24,13 @@ import java.time.format.DateTimeFormatter;;
 public class CSVExporter extends JOptionPane {
     public static void main(String[] args) {
         // Initialize Classes
-        JFrame f = new JFrame("CSV Exporter v1.0");
+        JFrame f = new JFrame("CSV Exporter v1.1");
         JPanel p = new JPanel();
         JButton b = new JButton("Create CSV");
         JTextArea jta = new JTextArea();
+        ImageIcon i = new ImageIcon("icon.png");
+        // Add Icon To Frame
+        f.setIconImage(i.getImage());
         // Set Rows To Make It Look Nicer
         jta.setRows(27);
         // Panel Operations (Set Layout, Add Variables)
